@@ -45,6 +45,11 @@ export interface OrganizationConfig {
   readonly vision: string;
 
   /**
+   * Organization goal statement.
+   */
+  readonly goal: string;
+
+  /**
    * Optional year in which the organization was established.
    */
   readonly foundedYear?: number;

@@ -9,21 +9,18 @@ import { organization } from "./organization";
  * possible to avoid duplicated organization information.
  */
 export const siteMetadata = {
-  applicationName:
-    organization.name,
+  applicationName: organization.name,
 
-  author:
-    organization.name,
+  author: organization.name,
 
-  creator:
-    organization.name,
+  creator: organization.name,
 
-  publisher:
-    organization.name,
+  publisher: organization.name,
 
-  copyrightHolder:
-    organization.legalName,
+  copyrightHolder: organization.legalName,
 
-  language:
-    organization.defaultLanguage,
+  language: organization.defaultLanguage,
+
+  siteUrl: organization.websiteUrl,
+  
 } satisfies SiteMetadataConfig;

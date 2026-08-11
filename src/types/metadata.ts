@@ -31,4 +31,10 @@ export interface SiteMetadataConfig {
    * Default HTML language.
    */
   readonly language: string;
+
+  /**
+   * Default site URL.
+   */
+  readonly siteUrl: string;
+
 }

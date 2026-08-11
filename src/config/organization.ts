@@ -11,7 +11,7 @@ export const organization = {
 
   shortName: "LPA",
 
-  logoPath: "/images/logo/logo-main.svg",
+  logoPath: "/images/logo/logo-mark.svg",
 
   legalName: "Luminary Performing Arts, Inc.",
 
@@ -23,10 +23,13 @@ export const organization = {
   vision:
     "To inspire students to discover and develop their gifts while growing in confidence, character, creativity, and community.",
 
-  websiteUrl:
-    "https://www.luminaryperformingarts.org",
+  goal:
+    "Through creativity, collaboration, and meaningful performance experiences, Luminary Performing Arts helps young people discover confidence both on and off the stage.",
+
+  websiteUrl: "https://www.luminaryperformingarts.org",
 
   defaultLanguage: "en-US",
 
   defaultLocale: "en_US",
+  
 } satisfies OrganizationConfig;

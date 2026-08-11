@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 
-import {
-  organization,
-  seo,
-  siteMetadata,
-} from "@/src/config";
-
+import { organization, seo, siteMetadata } from "@/src/config";
 
 /**
  * Generates the default Next.js metadata configuration
@@ -13,103 +8,76 @@ import {
  */
 export function createSiteMetadata(): Metadata {
   return {
-    metadataBase:
-      new URL(seo.siteUrl),
+    metadataBase: new URL(seo.siteUrl),
 
     title: {
-      default:
-        seo.defaultTitle,
+      default: seo.defaultTitle,
 
-      template:
-        seo.titleTemplate,
+      template: seo.titleTemplate,
     },
 
-    description:
-      seo.description,
+    description: seo.description,
 
-    applicationName:
-      siteMetadata.applicationName,
+    applicationName: siteMetadata.applicationName,
 
     authors: [
       {
-        name:
-          siteMetadata.author,
+        name: siteMetadata.author,
       },
     ],
 
-    creator:
-      siteMetadata.creator,
+    creator: siteMetadata.creator,
 
-    publisher:
-      siteMetadata.publisher,
+    publisher: siteMetadata.publisher,
 
-    keywords:
-      [...seo.keywords],
+    keywords: [...seo.keywords],
 
     alternates: {
       canonical: "/",
     },
 
     openGraph: {
-      type:
-        seo.openGraph.type,
+      type: seo.openGraph.type,
 
-      locale:
-        seo.openGraph.locale,
+      locale: seo.openGraph.locale,
 
-      siteName:
-        seo.openGraph.siteName,
+      siteName: seo.openGraph.siteName,
 
-      title:
-        seo.defaultTitle,
+      title: seo.defaultTitle,
 
-      description:
-        seo.description,
+      description: seo.description,
 
-      url:
-        seo.siteUrl,
+      url: seo.siteUrl,
 
-      images:
-        seo.openGraph.image
-          ? [
-              {
-                url:
-                  seo.openGraph.image,
+      images: seo.openGraph.image
+        ? [
+            {
+              url: seo.openGraph.image,
 
-                alt:
-                  seo.openGraph.imageAlt ??
-                  organization.name,
-              },
-            ]
-          : undefined,
+              alt: seo.openGraph.imageAlt ?? organization.name,
+            },
+          ]
+        : undefined,
     },
 
     robots: {
-      index:
-        seo.robots.index,
+      index: seo.robots.index,
 
-      follow:
-        seo.robots.follow,
+      follow: seo.robots.follow,
 
-      googleBot:
-        seo.robots.googleBot
-          ? {
-              index:
-                seo.robots.googleBot.index,
+      googleBot: seo.robots.googleBot
+        ? {
+            index: seo.robots.googleBot.index,
 
-              follow:
-                seo.robots.googleBot.follow,
+            follow: seo.robots.googleBot.follow,
 
-              "max-image-preview":
-                seo.robots.googleBot.maxImagePreview,
+            "max-image-preview": seo.robots.googleBot.maxImagePreview,
 
-              "max-snippet":
-                seo.robots.googleBot.maxSnippet,
+            "max-snippet": seo.robots.googleBot.maxSnippet,
 
-              "max-video-preview":
-                seo.robots.googleBot.maxVideoPreview,
-            }
-          : undefined,
+            "max-video-preview": seo.robots.googleBot.maxVideoPreview,
+          }
+        : undefined,
     },
 
     formatDetection: {

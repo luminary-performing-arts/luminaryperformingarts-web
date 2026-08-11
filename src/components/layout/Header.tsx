@@ -1,25 +1,33 @@
-import Image from "next/image";
+import { Logo } from "@/src/components/brand";
+
+import {
+  DesktopNavigation,
+  MobileNavigationController,
+} from "@/src/components/navigation";
+
+import { 
+  features, 
+  navigation,
+} from "@/src/config";
+
+import { Button } from "@/src/components/ui";
 
 import Container from "./Container";
 
-import DesktopNav from "../navigation/DesktopNav";
-
-import MobileNav from "../navigation/MobileNav";
-
-import DonateButton from "../navigation/DonateButton";
-
+/**
+ * Global application header.
+ */
 export default function Header() {
   return (
     <header
       className="
         sticky
         top-0
-        z-50
-        bg-cream-100/80
-        backdrop-blur
+        z-[var(--z-header)]
         border-b
-        border-slate-200 
-        inset-0 bg-[radial-gradient(circle_at_top_right,#071f52_0%,transparent_30%)]
+        border-[var(--color-border)]
+        bg-[var(--color-background-secondary)]/70
+        backdrop-blur
       "
     >
       <Container
@@ -31,23 +39,26 @@ export default function Header() {
           h-24
           items-center
           justify-between
-          text-slate-900
+          gap-6
         "
       >
-        <Image
-          src="/images/logo/logo-horizontal.svg"
-          alt="Luminary Performing Arts"
-          width={220}
-          height={80}
-          priority
-          bg-cream-100
-        />
+          <Logo 
+            size="small" 
+            priority
+          />
+        
+        <DesktopNavigation />
 
-        <DesktopNav />
-
-        <DonateButton />
-
-        <MobileNav />
+        {features.donations && (
+          <Button
+            href="/donate"
+            variant="secondary" 
+            size="medium"
+            >
+              Donate
+          </Button>
+        )}
+        <MobileNavigationController />
       </Container>
     </header>
   );

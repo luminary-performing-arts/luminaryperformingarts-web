@@ -2,13 +2,7 @@
  * Social platform identifiers supported by the website.
  */
 export type SocialPlatform =
-  | "facebook"
-  | "instagram"
-  | "youtube"
-  | "linkedin"
-  | "x"
-  | "tiktok";
-
+  "facebook" | "instagram" | "youtube" | "linkedin" | "x" | "tiktok";
 
 /**
  * Individual social media profile.
@@ -25,7 +19,6 @@ export interface SocialProfile {
    */
   readonly enabled: boolean;
 }
-
 
 /**
  * Social media configuration.

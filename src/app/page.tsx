@@ -1,5 +1,3 @@
-import { organization } from "@/src/config";
-
 /**
  * Root homepage.
  *
@@ -7,54 +5,108 @@ import { organization } from "@/src/config";
  * Phases 4 and 5.
  */
 
+{
+  /*
+import {
+  organization,
+} from "@/src/config";
+
+import {
+  Container,
+  Section,
+} from "@/src/components/layout";
+
+import {
+  Heading,
+  Text,
+} from "@/src/components/ui";
+
+import {
+  Hero,
+} from "@/src/features/hero";
+*/
+}
+
+{
+  /*
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <section
-        className="
-          flex
-          min-h-screen
-          items-center
-          justify-center
-          px-6
-          py-24
-        "
-      >
-        <div className="mx-auto max-w-3xl text-center">
-          <p
+    <Section
+      spacing="large"
+      className="
+        flex
+        min-h-screen
+        items-center
+      "
+    >
+      <Container>
+        <div
+          className="
+            mx-auto
+            max-w-3xl
+            text-center
+          "
+        >
+          <Text
+            size="base"
+            tone="accent"
             className="
               mb-4
-              text-sm
               font-semibold
               uppercase
               tracking-[0.25em]
-              text-[var(--color-secondary-dark)]
             "
           >
-            Launching Soon
-          </p>
+              Launching Soon
+            </Text>
 
-          <h1 className="text-4xl font-semibold tracking-tight text-[var(--color-primary)] sm:text-5xl lg:text-6xl">
-            <a>
-              <img src={organization.logoPath} alt={organization.name} className="mx-auto mb-4 w-124" />
-            </a>
-          </h1>
+            <Heading
+              as="h1"
+              size="xl"
+            >
+              <a>
+                <img src={organization.logoPath} alt={organization.name} className="mx-auto mb-4 w-124" />
+              </a>
 
-          <p
-            className="
-              mx-auto
-              mt-6
-              max-w-2xl
-              text-lg
-              leading-8
-              text-[var(--color-text-muted)]
-            "
-          >
-            {organization.slogan}
-          </p>
+              <Text
+                as="span"
+                size="xl"
+                tone="muted"
+                className="
+                  block
+                  font-normal
+                  tracking-tight
+                "
+              >
+                {organization.slogan}
+              </Text>
+            </Heading>
 
-        </div>
-      </section>
-    </main>
+          </div>
+      </Container>
+    </Section>
+  );
+}
+*/
+}
+
+/* ===================================================== */
+
+import { Hero } from "@/src/features/hero";
+import { MissionSection } from "@/src/features/mission";
+
+/**
+ * Luminary Performing Arts homepage.
+ *
+ * This route acts as the composition layer for homepage
+ * features. Individual section implementations should live
+ * within their respective feature modules.
+ */
+export default function HomePage() {
+  return (
+    <>
+      <Hero />
+      <MissionSection />
+    </>
   );
 }

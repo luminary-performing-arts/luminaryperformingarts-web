@@ -30,7 +30,6 @@ export interface ThemeColors {
   readonly info: string;
 }
 
-
 /**
  * Border radius configuration.
  */
@@ -42,7 +41,6 @@ export interface ThemeRadius {
   readonly full: string;
 }
 
-
 /**
  * Layout configuration.
  */
@@ -50,7 +48,6 @@ export interface ThemeLayout {
   readonly containerMaxWidth: string;
   readonly headerHeight: string;
 }
-
 
 /**
  * Complete application theme configuration.

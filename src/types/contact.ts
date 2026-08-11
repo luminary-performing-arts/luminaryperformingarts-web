@@ -10,7 +10,6 @@ export interface AddressConfig {
   readonly country: string;
 }
 
-
 /**
  * Standard operating-hours entry.
  */
@@ -19,7 +18,6 @@ export interface BusinessHoursConfig {
   readonly days: string;
   readonly hours: string;
 }
-
 
 /**
  * Organization contact configuration.

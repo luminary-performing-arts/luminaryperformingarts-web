@@ -6,6 +6,7 @@ import type { NavigationConfig } from "@/src/types";
  * Navigation is separated into:
  *
  * - primary
+ * - cta
  * - footer
  * - legal
  */
@@ -42,6 +43,13 @@ export const navigation = {
     },
   ],
 
+  cta: [
+    {
+      label: "Donate",
+      href: "/donate",
+    },
+  ],
+
   footer: [
     {
       label: "About",
@@ -66,12 +74,6 @@ export const navigation = {
     {
       label: "Contact",
       href: "/contact",
-    },
-
-    {
-      label: "Donate",
-      href: "/donate",
-      highlight: true,
     },
   ],
 

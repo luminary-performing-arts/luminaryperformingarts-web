@@ -59,15 +59,9 @@
    * Next.js fonts will be integrated later through layout.tsx.
    * ------------------------------------------------------------- */
 
-  --font-sans:
-    Arial,
-    Helvetica,
-    sans-serif;
+  --font-sans: Arial, Helvetica, sans-serif;
 
-  --font-serif:
-    Georgia,
-    "Times New Roman",
-    serif;
+  --font-serif: Georgia, "Times New Roman", serif;
 
   /* ---------------------------------------------------------------
    * Layout
@@ -91,17 +85,13 @@
    * Shadows
    * ------------------------------------------------------------- */
 
-  --shadow-sm:
-    0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
 
-  --shadow-md:
-    0 8px 24px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 0.08);
 
-  --shadow-lg:
-    0 16px 48px rgb(0 0 0 / 0.12);
+  --shadow-lg: 0 16px 48px rgb(0 0 0 / 0.12);
 
-  --shadow-glow:
-    0 0 60px rgb(201 162 75 / 0.20);
+  --shadow-glow: 0 0 60px rgb(201 162 75 / 0.2);
 
   /* ---------------------------------------------------------------
    * Motion

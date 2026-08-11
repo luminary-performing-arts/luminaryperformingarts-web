@@ -7,10 +7,17 @@ import type { ContactConfig } from "@/src/types";
  * Do not use placeholder phone numbers or addresses in production.
  */
 export const contact = {
-  email:
-    "info@luminaryperformingarts.org",
+  email: "info@luminaryperformingarts.org",
 
   address: {
     country: "US",
+
+    street: "N/A",
+
+    city: "San Diego",
+
+    state: "CA",
+
+    postalCode: "N/A",
   },
 } satisfies ContactConfig;

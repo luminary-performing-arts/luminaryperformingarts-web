@@ -1,39 +1,51 @@
+import {
+  FooterBrand,
+  FooterContact,
+  FooterCopyright,
+  FooterSocial,
+} from "@/src/components/footer";
+
+import { FooterNavigation } from "@/src/components/navigation";
+
 import Container from "./Container";
 
+/**
+ * Global application footer.
+ */
 export default function Footer() {
   return (
     <footer
       className="
-        border-t
-        bg-[var(--color-primary)]
+        bg-[var(--color-primary-dark)]
         text-white
-        py-12
       "
     >
-      <Container>
+      <Container
+        className="
+          mx-auto
+          py-14
+          sm:py-16
+        "
+      >
         <div
           className="
-            flex
-            flex-col
-            gap-6
-            lg:flex-row
-            lg:justify-between
+            grid
+            gap-10
+            md:grid-cols-2
+            lg:grid-cols-[2fr_1fr_1fr]
+            lg:gap-12
           "
         >
-          <div>
-            <h3 className="text-xl font-semibold">
-              Luminary Performing Arts
-            </h3>
-
-            <p className="mt-2 opacity-80">
-              Where every child's light is seen.
-            </p>
+          <FooterBrand />
+          <FooterNavigation />
+          <div className="gap-10">
+            <FooterContact />
+            <FooterSocial />
           </div>
+        </div>
 
-          <div className="text-sm opacity-70">
-            © {new Date().getFullYear()} Luminary Performing Arts.
-            All rights reserved.
-          </div>
+        <div className="mt-12">
+          <FooterCopyright />
         </div>
       </Container>
     </footer>

@@ -13,7 +13,6 @@ export interface OpenGraphConfig {
   readonly imageAlt?: string;
 }
 
-
 /**
  * Search-engine crawler behavior.
  */
@@ -30,7 +29,6 @@ export interface RobotsConfig {
     readonly maxVideoPreview?: number;
   };
 }
-
 
 /**
  * Site-wide SEO configuration.

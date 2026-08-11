@@ -1,10 +1,7 @@
 /**
  * Supported navigation targets.
  */
-export type NavigationTarget =
-  | "_self"
-  | "_blank";
-
+export type NavigationTarget = "_self" | "_blank";
 
 /**
  * Individual navigation entry.
@@ -42,7 +39,6 @@ export interface NavigationItem {
   readonly ariaLabel?: string;
 }
 
-
 /**
  * Application navigation configuration.
  */
@@ -51,6 +47,8 @@ export interface NavigationConfig {
    * Primary site navigation.
    */
   readonly primary: readonly NavigationItem[];
+
+  readonly cta: readonly NavigationItem[];
 
   /**
    * Footer navigation.

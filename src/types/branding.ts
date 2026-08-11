@@ -7,14 +7,12 @@ export interface LogoAssets {
   readonly favicon: string;
 }
 
-
 /**
  * Decorative brand assets.
  */
 export interface DecorativeAssets {
   readonly star: string;
 }
-
 
 /**
  * Hero-specific visual assets.
@@ -27,7 +25,6 @@ export interface HeroAssets {
   readonly sparklesOverlay: string;
   readonly creamGradient: string;
 }
-
 
 /**
  * Complete application branding configuration.

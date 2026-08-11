@@ -11,38 +11,28 @@ export const branding = {
   logoAlt: `${organization.name} logo`,
 
   logos: {
-    horizontal:
-      "/images/logo/logo-horizontal.svg",
+    horizontal: "/images/logo/logo-horizontal.png",
 
-    mark:
-      "/images/logo/logo-mark.svg",
+    mark: "/images/logo/logo-mark.svg",
 
-    favicon:
-      "/images/logo/favicon.ico",
+    favicon: "/images/favicon.ico",
   },
 
   decorative: {
-    star:
-      "/images/logo/star.svg",
+    star: "/images/hero/star.svg",
   },
 
   hero: {
-    childrenSilhouette:
-      "/images/hero/children-silhouette.svg",
+    childrenSilhouette: "/images/hero/children-silhouette.svg",
 
-    curtainRight:
-      "/images/hero/curtain-right.png",
+    curtainRight: "/images/hero/curtain-right.png",
 
-    glow:
-      "/images/hero/hero-glow.png",
+    glow: "/images/hero/hero-glow.png",
 
-    glowLong:
-      "/images/hero/hero-glow-long.png",
+    glowLong: "/images/hero/hero-glow-long.png",
 
-    sparklesOverlay:
-      "/images/effects/sparkles-overlay.png",
+    sparklesOverlay: "/images/effects/sparkles-overlay.png",
 
-    creamGradient:
-      "/images/backgrounds/cream-gradient.jpg",
+    creamGradient: "/images/backgrounds/cream-gradient.jpg",
   },
 } satisfies BrandingConfig;

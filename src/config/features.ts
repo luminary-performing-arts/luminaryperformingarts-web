@@ -16,7 +16,7 @@ export const features = {
 
   testimonials: true,
 
-  donations: false,
+  donations: true,
 
   contactForm: true,
 

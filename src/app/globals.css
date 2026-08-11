@@ -6,7 +6,6 @@
 @import "tailwindcss";
 @import "../styles/theme.css";
 
-
 /* =================================================================
  * Document
  * =============================================================== */
@@ -35,7 +34,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* =================================================================
  * Box Model
  * =============================================================== */
@@ -45,7 +43,6 @@ body {
 *::after {
   box-sizing: border-box;
 }
-
 
 /* =================================================================
  * Media
@@ -60,7 +57,6 @@ video {
   max-width: 100%;
 }
 
-
 /* =================================================================
  * Form Elements
  * =============================================================== */
@@ -72,7 +68,6 @@ select {
   font: inherit;
 }
 
-
 /* =================================================================
  * Links
  * =============================================================== */
@@ -81,7 +76,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 
 /* =================================================================
  * Typography
@@ -110,7 +104,6 @@ p {
   text-wrap: pretty;
 }
 
-
 /* =================================================================
  * Accessibility
  * =============================================================== */
@@ -119,7 +112,6 @@ p {
   outline: 3px solid var(--color-secondary);
   outline-offset: 3px;
 }
-
 
 /*
  * Respect operating-system accessibility preferences.
@@ -140,7 +132,6 @@ p {
   }
 }
 
-
 /* =================================================================
  * Selection
  * =============================================================== */
@@ -148,4 +139,107 @@ p {
 ::selection {
   background-color: var(--color-secondary);
   color: var(--color-primary);
+}
+
+/* =================================================================
+ * Fallbacks
+ * =============================================================== */
+
+/*
+ * Hero fallback visual system
+ *
+ * These styles provide the baseline Hero appearance when
+ * image-based decorative assets are disabled or unavailable.
+ */
+
+.hero-background {
+  background:
+    radial-gradient(
+      circle at 72% 42%,
+      rgb(201 162 75 / 18%) 0%,
+      rgb(201 162 75 / 8%) 28%,
+      transparent 58%
+    ),
+    radial-gradient(circle at 88% 72%, rgb(7 31 82 / 10%) 0%, transparent 45%),
+    linear-gradient(
+      135deg,
+      var(--color-background-secondary) 0%,
+      var(--color-background) 48%,
+      var(--color-surface-muted) 100%
+    );
+}
+
+.hero-fallback-glow {
+  background: radial-gradient(
+    ellipse at center,
+    rgb(201 162 75 / 24%) 0%,
+    rgb(201 162 75 / 12%) 32%,
+    transparent 70%
+  );
+
+  filter: blur(24px);
+}
+
+.hero-fallback-glow-long {
+  background: radial-gradient(
+    ellipse at center,
+    rgb(240 219 165 / 20%) 0%,
+    rgb(201 162 75 / 8%) 45%,
+    transparent 75%
+  );
+
+  filter: blur(48px);
+}
+
+.hero-fallback-curtain {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgb(7 31 82 / 8%) 15%,
+    rgb(7 31 82 / 24%) 45%,
+    rgb(4 21 52 / 82%) 100%
+  );
+}
+
+.hero-fallback-curtain::before {
+  position: absolute;
+  inset: 0;
+
+  content: "";
+
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    rgb(255 255 255 / 4%) 8%,
+    rgb(0 0 0 / 6%) 16%
+  );
+}
+
+.hero-fallback-sparkles {
+  background-image:
+    radial-gradient(
+      circle at 15% 25%,
+      rgb(201 162 75 / 35%) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 35% 60%,
+      rgb(240 219 165 / 45%) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 65% 20%,
+      rgb(201 162 75 / 30%) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 82% 48%,
+      rgb(240 219 165 / 40%) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 72% 78%,
+      rgb(201 162 75 / 25%) 0 1px,
+      transparent 2px
+    );
 }

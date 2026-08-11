@@ -9,37 +9,26 @@ export interface GoogleIntegrationConfig {
   readonly mapsApiEnabled: boolean;
 }
 
-
 /**
  * Email integration configuration.
  */
 export interface EmailIntegrationConfig {
   readonly provider:
-    | "none"
-    | "google-workspace"
-    | "resend"
-    | "sendgrid"
-    | "other";
+    "none" | "google-workspace" | "resend" | "sendgrid" | "other";
 
   readonly enabled: boolean;
 }
-
 
 /**
  * Donation integration configuration.
  */
 export interface DonationIntegrationConfig {
-  readonly provider:
-    | "none"
-    | "stripe"
-    | "paypal"
-    | "external";
+  readonly provider: "none" | "stripe" | "paypal" | "external";
 
   readonly enabled: boolean;
 
   readonly donationUrl?: string;
 }
-
 
 /**
  * Complete third-party integration configuration.

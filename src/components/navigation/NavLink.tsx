@@ -5,10 +5,7 @@ type Props = {
   label: string;
 };
 
-export default function NavLink({
-  href,
-  label,
-}: Props) {
+export default function NavLink({ href, label }: Props) {
   return (
     <Link
       href={href}

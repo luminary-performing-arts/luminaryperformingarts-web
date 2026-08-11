@@ -6,17 +6,13 @@ import { organization } from "./organization";
  * Site-wide search-engine and social-sharing defaults.
  */
 export const seo = {
-  siteUrl:
-    organization.websiteUrl,
+  siteUrl: organization.websiteUrl,
 
-  defaultTitle:
-    organization.name,
+  defaultTitle: organization.name,
 
-  titleTemplate:
-    `%s | ${organization.name}`,
+  titleTemplate: `%s | ${organization.name}`,
 
-  description:
-    organization.slogan,
+  description: organization.slogan,
 
   keywords: [
     "performing arts",
@@ -33,17 +29,13 @@ export const seo = {
   openGraph: {
     type: "website",
 
-    locale:
-      organization.defaultLocale,
+    locale: organization.defaultLocale,
 
-    siteName:
-      organization.name,
+    siteName: organization.name,
 
-    image:
-      "/images/social/og-default.jpg",
+    image: "/images/social/og-default.jpg",
 
-    imageAlt:
-      organization.name,
+    imageAlt: organization.name,
   },
 
   robots: {

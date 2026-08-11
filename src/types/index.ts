@@ -5,9 +5,7 @@
  * instead of referencing individual files directly.
  */
 
-export type {
-  OrganizationConfig,
-} from "./organization";
+export type { OrganizationConfig } from "./organization";
 
 export type {
   BrandingConfig,
@@ -28,17 +26,9 @@ export type {
   NavigationTarget,
 } from "./navigation";
 
-export type {
-  SocialConfig,
-  SocialPlatform,
-  SocialProfile,
-} from "./social";
+export type { SocialConfig, SocialPlatform, SocialProfile } from "./social";
 
-export type {
-  OpenGraphConfig,
-  RobotsConfig,
-  SeoConfig,
-} from "./seo";
+export type { OpenGraphConfig, RobotsConfig, SeoConfig } from "./seo";
 
 export type {
   ThemeColors,
@@ -47,13 +37,9 @@ export type {
   ThemeRadius,
 } from "./theme";
 
-export type {
-  SiteMetadataConfig,
-} from "./metadata";
+export type { SiteMetadataConfig } from "./metadata";
 
-export type {
-  FeatureConfig,
-} from "./features";
+export type { FeatureConfig } from "./features";
 
 export type {
   DonationIntegrationConfig,

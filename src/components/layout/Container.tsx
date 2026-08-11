@@ -1,24 +1,52 @@
-type ContainerProps = {
-  children: React.ReactNode;
-  className?: string;
-};
+import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
 
+import { cn } from "@/src/lib/utils";
+
+type ContainerElement = "div" | "section" | "main" | "article";
+
+interface ContainerProps {
+  /**
+   * HTML element used to render the container.
+   */
+  as?: ContainerElement;
+
+  /**
+   * Container contents.
+   */
+  children: ReactNode;
+
+  /**
+   * Additional CSS classes.
+   */
+  className?: string;
+}
+
+/**
+ * Standard application content container.
+ *
+ * Provides consistent maximum width and horizontal spacing
+ * throughout the website.
+ */
 export default function Container({
+  as = "div",
   children,
-  className = "",
+  className,
 }: ContainerProps) {
+  const Component = as as ElementType<ComponentPropsWithoutRef<"div">>;
+
   return (
-    <div
-      className={`
-        mx-auto
-        w-full
-        max-w-7xl
-        px-6
-        lg:px-8
-        ${className}
-      `}
+    <Component
+      className={cn(
+        "mx-auto",
+        "w-full",
+        "max-w-[var(--container-max-width)]",
+        "px-5",
+        "sm:px-6",
+        "lg:px-8",
+        className,
+      )}
     >
       {children}
-    </div>
+    </Component>
   );
 }
