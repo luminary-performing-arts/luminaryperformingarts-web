@@ -8,16 +8,16 @@ import Link from "next/link";
 
 import {
     ErrorMessage,
-} from "@/src/components/feedback";
+} from "@/components/feedback";
 
 import {
     Button,
-} from "@/src/components/ui";
+} from "@/components/ui";
 
 import {
     Container,
     Section,
-} from "@/src/components/layout";
+} from "@/components/layout";
 
 
 interface ErrorProps {

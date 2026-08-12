@@ -1,4 +1,4 @@
-import { branding, organization } from "@/src/config";
+import { branding, organization } from "@/config";
 
 import type { HeroConfig } from "../types/hero";
 

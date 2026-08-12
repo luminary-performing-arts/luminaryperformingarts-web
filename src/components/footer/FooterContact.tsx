@@ -1,4 +1,4 @@
-import { contact } from "@/src/config";
+import { contact } from "@/config";
 
 /**
  * Public organization contact information.

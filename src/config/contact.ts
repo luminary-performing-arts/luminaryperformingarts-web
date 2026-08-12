@@ -1,4 +1,4 @@
-import type { ContactConfig } from "@/src/types";
+import type { ContactConfig } from "@/types";
 
 /**
  * Public organization contact information.

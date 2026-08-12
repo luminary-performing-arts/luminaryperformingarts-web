@@ -1,4 +1,4 @@
-import type { SeoConfig } from "@/src/types";
+import type { SeoConfig } from "@/types";
 
 import { organization } from "./organization";
 

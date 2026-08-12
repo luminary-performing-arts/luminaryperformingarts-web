@@ -1,17 +1,16 @@
 import {
   Container,
   Section,
-} from "@/src/components/layout";
+} from "@/components/layout";
 
 import {
   SectionHeading,
   Text,
-} from "@/src/components/ui";
+} from "@/components/ui";
 
 import {
   missionConfig,
 } from "../config/mission";
-import { Divide, Quote } from "lucide-react";
 
 
 /**
@@ -37,7 +36,7 @@ export default function MissionSection() {
             title={missionConfig.title}
           />
 
-          <Divide className="mx-auto my-4 h-0 w-12" />
+          <hr className="mx-auto my-4 h-0 w-12 border-t border-current" />
           <Text
             size="base"
             tone="muted"

@@ -1,4 +1,4 @@
-import type { ThemeConfig } from "@/src/types";
+import type { ThemeConfig } from "@/types";
 
 /**
  * Application-level theme configuration.

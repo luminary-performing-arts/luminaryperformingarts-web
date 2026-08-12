@@ -1,4 +1,4 @@
-import { navigation } from "@/src/config";
+import { navigation } from "@/config";
 
 import NavigationList from "./NavigationList";
 

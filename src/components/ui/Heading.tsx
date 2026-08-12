@@ -1,6 +1,6 @@
 import type { HTMLAttributes, ReactNode } from "react";
 
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/lib/utils";
 
 export type HeadingElement = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 

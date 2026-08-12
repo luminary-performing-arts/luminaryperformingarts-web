@@ -2,13 +2,13 @@ import type { Metadata, Viewport } from "next";
 
 import "./globals.css";
 
-import { SkipLink } from "@/src/components/layout";
+import { SkipLink } from "@/components/layout";
 
-import { organization, theme } from "@/src/config";
+import { organization, theme } from "@/config";
 
-import { PageLayout } from "@/src/layouts";
+import { PageLayout } from "@/layouts";
 
-import { createSiteMetadata } from "@/src/lib/metadata";
+import { createSiteMetadata } from "@/lib/metadata";
 
 /**
  * Site-wide metadata generated from centralized

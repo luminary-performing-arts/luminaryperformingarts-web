@@ -1,16 +1,16 @@
-import { Logo } from "@/src/components/brand";
+import { Logo } from "@/components/brand";
 
 import {
   DesktopNavigation,
   MobileNavigationController,
-} from "@/src/components/navigation";
+} from "@/components/navigation";
 
 import { 
   features, 
   navigation,
-} from "@/src/config";
+} from "@/config";
 
-import { Button } from "@/src/components/ui";
+import { Button } from "@/components/ui";
 
 import Container from "./Container";
 

@@ -1,4 +1,4 @@
-import type { IntegrationConfig } from "@/src/types";
+import type { IntegrationConfig } from "@/types";
 
 /**
  * Runtime third-party integration configuration.

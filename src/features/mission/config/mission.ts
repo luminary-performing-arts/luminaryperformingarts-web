@@ -1,6 +1,6 @@
 import {
   organization,
-} from "@/src/config";
+} from "@/config";
 
 import type {
   MissionConfig,

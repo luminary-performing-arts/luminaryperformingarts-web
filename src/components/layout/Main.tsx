@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface MainProps {
   children: ReactNode;

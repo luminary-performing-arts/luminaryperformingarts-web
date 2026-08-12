@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { organization, seo, siteMetadata } from "@/src/config";
+import { organization, seo, siteMetadata } from "@/config";
 
 /**
  * Generates the default Next.js metadata configuration

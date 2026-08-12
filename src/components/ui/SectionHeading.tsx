@@ -4,7 +4,7 @@ import type {
 
 import {
   cn,
-} from "@/src/lib/utils";
+} from "@/lib/utils";
 
 import DecorativeAccent from "./DecorativeAccent";
 import Heading from "./Heading";

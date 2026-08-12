@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { branding, organization } from "@/src/config";
+import { branding, organization } from "@/config";
 
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/lib/utils";
 
 export type LogoVariant = "horizontal" | "mark";
 

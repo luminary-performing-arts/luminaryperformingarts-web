@@ -1,4 +1,4 @@
-import type { FeatureConfig } from "@/src/types";
+import type { FeatureConfig } from "@/types";
 
 /**
  * Application feature flags.

@@ -1,4 +1,4 @@
-import { social } from "@/src/config";
+import { social } from "@/config";
 
 /**
  * Public social profile links.

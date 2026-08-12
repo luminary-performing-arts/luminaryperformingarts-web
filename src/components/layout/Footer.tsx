@@ -3,9 +3,9 @@ import {
   FooterContact,
   FooterCopyright,
   FooterSocial,
-} from "@/src/components/footer";
+} from "@/components/footer";
 
-import { FooterNavigation } from "@/src/components/navigation";
+import { FooterNavigation } from "@/components/navigation";
 
 import Container from "./Container";
 

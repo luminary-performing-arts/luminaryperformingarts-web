@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Container, Section } from "@/src/components/layout";
+import { Container, Section } from "@/components/layout";
 import { heroConfig } from "../config/hero";
 
 import HeroArtwork from "./HeroArtwork";

@@ -1,8 +1,8 @@
-import { Logo } from "@/src/components/brand";
+import { Logo } from "@/components/brand";
 
-import { organization } from "@/src/config";
+import { organization } from "@/config";
 
-import { Text } from "@/src/components/ui";
+import { Text } from "@/components/ui";
 
 /**
  * Footer organization identity and mission.

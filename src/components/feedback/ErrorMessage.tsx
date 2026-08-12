@@ -1,7 +1,7 @@
 import {
     Button,
     SectionHeading,
-} from "@/src/components/ui";
+} from "@/components/ui";
 
 
 interface ErrorMessageProps {

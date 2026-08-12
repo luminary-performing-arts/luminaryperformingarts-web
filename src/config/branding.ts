@@ -1,4 +1,4 @@
-import type { BrandingConfig } from "@/src/types";
+import type { BrandingConfig } from "@/types";
 
 import { organization } from "./organization";
 

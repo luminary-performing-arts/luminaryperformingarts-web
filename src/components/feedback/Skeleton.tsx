@@ -1,6 +1,6 @@
 import {
     cn,
-} from "@/src/lib/utils";
+} from "@/lib/utils";
 
 
 export type SkeletonVariant =

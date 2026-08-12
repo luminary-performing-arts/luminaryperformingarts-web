@@ -1,4 +1,4 @@
-import type { SiteMetadataConfig } from "@/src/types";
+import type { SiteMetadataConfig } from "@/types";
 
 import { organization } from "./organization";
 

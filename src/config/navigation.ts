@@ -1,4 +1,4 @@
-import type { NavigationConfig } from "@/src/types";
+import type { NavigationConfig } from "@/types";
 
 /**
  * Global site navigation.

@@ -1,6 +1,6 @@
 import {
     SectionHeading,
-} from "@/src/components/ui";
+} from "@/components/ui";
 
 
 interface EmptyStateProps {

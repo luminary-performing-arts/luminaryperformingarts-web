@@ -1,10 +1,10 @@
-import { Heading, Text } from "@/src/components/ui";
+import { Heading, Text } from "@/components/ui";
 
 import { heroConfig } from "../config/hero";
 
 import HeroActions from "./HeroActions";
 import HeroEyebrow from "./HeroEyebrow";
-import { Logo } from "@/src/components/brand";
+import { Logo } from "@/components/brand";
 
 /**
  * Primary textual content for the homepage Hero.

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { navigation, organization } from "@/src/config";
+import { navigation, organization } from "@/config";
 
 /**
  * Footer copyright and legal navigation.

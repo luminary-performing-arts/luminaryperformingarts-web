@@ -1,15 +1,14 @@
 import {
   Container,
   Section,
-} from "@/src/components/layout";
+} from "@/components/layout";
 
 import {
   Button,
+  Divider,
   SectionHeading,
   Text,
-} from "@/src/components/ui";
-
-import { Divide } from "lucide-react";
+} from "@/components/ui";
 
 /**
  * Temporary donation landing page.
@@ -42,7 +41,7 @@ export default function DonatePage() {
             description=""
           />
 
-          <Divide className="mx-auto my-4 h-0 w-12" />
+          <Divider className="mx-auto my-4 h-0 w-12" />
           <Text
             size="lg"
             tone="muted"

@@ -1,4 +1,4 @@
-import { Button } from "@/src/components/ui";
+import { Button } from "@/components/ui";
 
 import { heroConfig } from "../config/hero";
 

@@ -4,7 +4,7 @@ import type {
 
 import {
     siteMetadata,
-} from "@/src/config";
+} from "@/config";
 
 
 /**

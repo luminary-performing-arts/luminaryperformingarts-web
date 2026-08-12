@@ -1,4 +1,4 @@
-import type { OrganizationConfig } from "@/src/types";
+import type { OrganizationConfig } from "@/types";
 
 /**
  * Primary organization identity.

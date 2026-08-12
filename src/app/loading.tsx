@@ -1,12 +1,12 @@
 import {
     Container,
     Section,
-} from "@/src/components/layout";
+} from "@/components/layout";
 
 import {
     LoadingSpinner,
     Skeleton,
-} from "@/src/components/feedback";
+} from "@/components/feedback";
 
 
 /**

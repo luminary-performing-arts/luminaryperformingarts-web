@@ -1,4 +1,4 @@
-import type { SocialConfig } from "@/src/types";
+import type { SocialConfig } from "@/types";
 
 /**
  * Public social media profiles.

@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import type { NavigationItem as NavigationItemConfig } from "@/src/types";
+import type { NavigationItem as NavigationItemConfig } from "@/types";
 
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface NavigationItemProps {
   item: NavigationItemConfig;
